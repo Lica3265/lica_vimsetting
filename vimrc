@@ -31,6 +31,7 @@ set noswapfile
 set hidden
 set nobomb            " no BOM(Byte Order Mark)
 set mouse=a
+set number
 
 "--------------
 " Filetype and Encoding
