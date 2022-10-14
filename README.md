@@ -19,18 +19,3 @@ c
 
 最後開啟 Vim，並執行 `:PlugInstall` 指令安裝外掛程式。
 
-### 方法二：快速安裝
-
-如果你信得過我的話，你可以在終端機環境直接貼上並執行以下這段程式：
-
-1. 使用 `curl`：
-
-```
-$ sh <(curl -L https://github.com/kaochenlong/cch/raw/master/utils/install.sh)
-```
-
-2. 使用 `wget`： 
-
-```
-$ sh <(wget --no-check-certificate https://github.com/kaochenlong/cch/raw/master/utils/install.sh -O -)
-```
