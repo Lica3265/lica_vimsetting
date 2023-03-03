@@ -25,7 +25,6 @@ call plug#end()
 "--------------
 " Settings
 "--------------
-ser number
 set nocompatible
 set clipboard=unnamed
 set noswapfile
