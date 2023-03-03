@@ -19,20 +19,23 @@ call plug#begin('~/.vim/plugged')
 
   " for vue.js development   
   Plug 'leafOfTree/vim-vue-plugin'
+  " for python3 development 
+  Plug 'ycm-core/YouCompleteme'  
 
 call plug#end()
 
 "--------------
 " Settings
 "--------------
-ser number
+set number
 set nocompatible
-set clipboard=unnamed
+set paste
+set clipboard=unnamedplus
 set noswapfile
 set hidden
 set nobomb            " no BOM(Byte Order Mark)
 set mouse=a
-
+set tags=./tags,./TAGS,tags;~,TAGS;~
 "--------------
 " Filetype and Encoding
 "--------------
