@@ -19,20 +19,31 @@ call plug#begin('~/.vim/plugged')
 
   " for vue.js development   
   Plug 'leafOfTree/vim-vue-plugin'
+  " for python3 development 
+  Plug 'ycm-core/YouCompleteme'  
 
 call plug#end()
 
 "--------------
 " Settings
 "--------------
+<<<<<<< HEAD
+=======
+set number
+>>>>>>> c0740ce82b623abb2f1c5aa30bbb3b9b9377ad5e
 set nocompatible
-set clipboard=unnamed
+set paste
+set clipboard=unnamedplus
 set noswapfile
 set hidden
 set nobomb            " no BOM(Byte Order Mark)
 set mouse=a
+<<<<<<< HEAD
 set number
 
+=======
+set tags=./tags,./TAGS,tags;~,TAGS;~
+>>>>>>> c0740ce82b623abb2f1c5aa30bbb3b9b9377ad5e
 "--------------
 " Filetype and Encoding
 "--------------
@@ -47,6 +58,7 @@ scriptencoding utf-8
 "--------------
 " key mapping
 "--------------
+nmap <F8> :TagbarToggle<CR>
 
 " WSL yank support
 let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
