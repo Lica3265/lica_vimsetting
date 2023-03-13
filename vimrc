@@ -15,10 +15,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'airblade/vim-gitgutter'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } 
   Plug 'junegunn/fzf.vim'
-  Plug 'vim-scripts/cscope.vim'
+  "Plug 'vim-scripts/cscope.vim'
 
   " for vue.js development   
-  Plug 'leafOfTree/vim-vue-plugin'
+  "Plug 'leafOfTree/vim-vue-plugin'
   " for python3 development 
   Plug 'ycm-core/YouCompleteme'  
 
@@ -27,10 +27,7 @@ call plug#end()
 "--------------
 " Settings
 "--------------
-<<<<<<< HEAD
-=======
 set number
->>>>>>> c0740ce82b623abb2f1c5aa30bbb3b9b9377ad5e
 set nocompatible
 set paste
 set clipboard=unnamedplus
@@ -38,12 +35,9 @@ set noswapfile
 set hidden
 set nobomb            " no BOM(Byte Order Mark)
 set mouse=a
-<<<<<<< HEAD
 set number
 
-=======
 set tags=./tags,./TAGS,tags;~,TAGS;~
->>>>>>> c0740ce82b623abb2f1c5aa30bbb3b9b9377ad5e
 "--------------
 " Filetype and Encoding
 "--------------
@@ -60,6 +54,7 @@ scriptencoding utf-8
 "--------------
 nmap <F8> :TagbarToggle<CR>
 
+nmap <F12> :lwindow<CR>
 " WSL yank support
 let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
 if executable(s:clip)
