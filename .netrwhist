@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/tmp2/cali/OGB_SEAL_EXPERRIMENT/SEAL_OGB/results/ogbl-vessel_20230317155537'
 let g:netrw_dirhist_3='/home/cali/.vim'
 let g:netrw_dirhist_2='/home/jakianyoky/datascience/hw1-107304004'
 let g:netrw_dirhist_1='/home/jakianyoky/.oh-my-zsh'

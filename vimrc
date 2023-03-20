@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'airblade/vim-gitgutter'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } 
   Plug 'junegunn/fzf.vim'
+  Plug 'jpalardy/vim-slime'
   "Plug 'vim-scripts/cscope.vim'
 
   " for vue.js development   
@@ -54,7 +55,7 @@ scriptencoding utf-8
 "--------------
 nmap <F8> :TagbarToggle<CR>
 
-nmap <F12> :lwindow<CR>
+nmap <F12> :ltag<CR> :lwindow<CR>
 " WSL yank support
 let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
 if executable(s:clip)
