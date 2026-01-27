@@ -19,3 +19,10 @@
 
 最後開啟 Vim，並執行 `:PlugInstall` 指令安裝外掛程式。
 
+### 無管理員權限版
+
+有些環境，不允許取得最高權限工作，這時，可以使用Oh My Bash感受Zsh like的強大功能!
+
+    $ cd ~
+    $ git clone https://github.com/Lica3265/setup_zshlikebash.sh .
+    $ source ~/.bashrc
